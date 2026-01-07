@@ -1,0 +1,1 @@
+SELECT * FROM {{ ref('actual_table') }} ORDER BY file_modification_time;
