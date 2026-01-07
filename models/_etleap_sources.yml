@@ -1,27 +1,11 @@
 version: 2
 sources:
-  - name: CAIUS_DEV
-    database: SNOWFLAKE_2025
+  - name: aayan_test
+    database: dev_etleap
     quoting:
         schema: true
         identifier: true
     tables:
-      - name: WEB_EVENTS
-  - name: DEV
-    database: SNOWFLAKE_2025
-    quoting:
-        schema: true
-        identifier: true
-    tables:
-      - name: WEB_EVENTS
-  - name: PUBLIC
-    database: SNOWFLAKE_2025
-    quoting:
-        schema: true
-        identifier: true
-    tables:
-      - name: ORDERS
-      - name: SALESFORCE_ACCOUNT
-      - name: TICKETS
-      - name: TRADE_ANOMALY
-      - name: WATCHLIST
+      - name: Aayan_S3_Input
+      - name: example_table
+      - name: example_table_2

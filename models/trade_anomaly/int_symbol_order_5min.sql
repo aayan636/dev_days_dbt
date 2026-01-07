@@ -1,6 +1,6 @@
 {{ config(
     pre_hook=[
-        "set MIN_DATE = dateadd(minute, -5, current_timestamp())"
+        "set MIN_DATE = dateadd(minute, -10, current_timestamp())"
     ]
 ) }}
 
