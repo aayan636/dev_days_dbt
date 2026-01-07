@@ -1,1 +1,1 @@
-SELECT * FROM {{ source('aayan_test', 'Aayan_S3_Lots_Of_Small_Files') }};
+SELECT * FROM {{ source('aayan_test', 'Aayan_S3_Lots_Of_Small_Files') }}
