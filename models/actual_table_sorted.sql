@@ -1,1 +1,1 @@
-SELECT * FROM {{ ref('actual_table') }} ORDER BY t1_file_modification_time
+SELECT * FROM {{ ref('actual_table') }} ORDER BY t2_file_modification_time
