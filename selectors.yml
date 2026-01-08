@@ -1,12 +1,8 @@
 selectors:
-  - name: trade_anomaly
+  - name: some_tables
+    description: "Select some tables for demonstration"
     definition:
-      tag: trade_anomaly
-  - name: tickets
-    definition:
-      union:
-        - method: fqn
-          value: "*"
-        - exclude:
-            - method: tag
-              value: trade_anomaly
+      method: fqn
+      value:
+        - another_table
+        - actual_table_again_because_why_not
