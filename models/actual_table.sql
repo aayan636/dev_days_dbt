@@ -16,13 +16,12 @@ t2 AS (
 SELECT
     -- t1 columns with prefix
     {% for col in t1_cols %}
-        t1.{{ col }} AS t1_{{ col }}
+        t1.{{ col }} AS t1_{{ col }}{% if not loop.last or t2_cols|length > 0 %},{% endif %}
     {% endfor %}
     -- t2 columns with prefix
     {% for col in t2_cols %}
-        t2.{{ col }} AS t2_{{ col }}
+        t2.{{ col }} AS t2_{{ col }}{% if not loop.last %},{% endif %}
     {% endfor %}
-FROM t1
-FULL OUTER JOIN t2
+FROM t1 FULL OUTER JOIN t2
     ON t1.rn = t2.rn
 ORDER BY COALESCE(t1.rn, t2.rn)
