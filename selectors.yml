@@ -1,6 +1,6 @@
 selectors:
-  - name: 
-    description:
+  - name: some_tables
+    description: "Select some tables for demonstration"
     definition:
       method: fqn
       value:
