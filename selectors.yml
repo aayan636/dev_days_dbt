@@ -1,6 +1,9 @@
 selectors:
   - name: tickets
-    description: "Select two tables for demonstration"
+    description: "Trying really hard to select two tables"
     definition:
-      method: selector
-      value: "another_table actual_table_again_because_why_not"
+      union:
+        - method: fqn
+          value: another_table
+        - method: fqn
+          value: actual_table_again_because_why_not
