@@ -16,11 +16,11 @@ t2 AS (
 SELECT
     -- t1 columns with prefix
     {% for col in t1_cols %}
-        t1.{{ col }} AS t1_{{ col }}{% if not loop.last or t2_cols|length > 0 %},{% endif %}
+        t1.{{ col }} AS t1_{{ col }}
     {% endfor %}
     -- t2 columns with prefix
     {% for col in t2_cols %}
-        t2.{{ col }} AS t2_{{ col }}{% if not loop.last %},{% endif %}
+        t2.{{ col }} AS t2_{{ col }}
     {% endfor %}
 FROM t1
 FULL OUTER JOIN t2
