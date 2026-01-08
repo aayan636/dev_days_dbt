@@ -4,6 +4,6 @@ selectors:
     definition:
       union:
         - method: fqn
-          value: actual_table
+          value: another_table
         - method: fqn
           value: actual_table_again_because_why_not
