@@ -1,5 +1,5 @@
 selectors:
-  - name: some_tables
+  - name: tickets
     description: "Select some tables for demonstration"
     definition:
       method: fqn
