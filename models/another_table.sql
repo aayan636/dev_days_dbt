@@ -1,0 +1,1 @@
+SELECT * from {{ source('aayan_test', 'Aayan_S3_Even_More_Small_Files') }}
