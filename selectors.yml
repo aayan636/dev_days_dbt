@@ -1,8 +1,6 @@
 selectors:
   - name: tickets
-    description: "Select some tables for demonstration"
+    description: "Select two tables for demonstration"
     definition:
-      method: fqn
-      value:
-        - another_table
-        - actual_table_again_because_why_not
+      method: selector
+      value: "another_table actual_table_again_because_why_not"
