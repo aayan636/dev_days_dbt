@@ -18,7 +18,7 @@ t2 AS (
 SELECT
     -- t1 columns with prefix
     {% for col in t1_cols %}
-        t1.{{ col }} AS t1_{{ col }}{% if not loop.last or t2_cols|length > 0 %},{% endif %}
+        t1.{{ col }} AS t1_{{ col }}{% if not loop.last %},{% endif %}
     {% endfor %}
     -- t2 columns with prefix
     {% for col in t2_cols %}
