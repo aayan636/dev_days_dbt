@@ -5,7 +5,6 @@
 {% set t1_cols = adapter.get_columns_in_relation(t1_relation) | map(attribute='name') | reject('equalto','rn') | list %}
 {% set t2_cols = adapter.get_columns_in_relation(t2_relation) | map(attribute='name') | reject('equalto','rn') | list %}
 
-
 WITH t1 AS (
     SELECT row_number() OVER () AS rn, *
     FROM {{ t1_relation }}
