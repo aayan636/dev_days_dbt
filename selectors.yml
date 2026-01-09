@@ -3,9 +3,9 @@ selectors:
     description: "Trying really hard to select two tables"
     definition:
       union:
-        - method: fqn
-          value: actual_table
         # - method: fqn
-        #   value: actual_table_again_because_why_not
+        #   value: actual_table
+        - method: fqn
+          value: actual_table_again_because_why_not
         # - method: fqn
         #   value: another_table
