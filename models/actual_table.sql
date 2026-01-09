@@ -2,7 +2,6 @@
 {% set t2_relation = ref('another_table') %}
 
 
-
 -- Generate prefixed column lists dynamically
 {% set t1_cols = adapter.get_columns_in_relation(t1_relation) | map(attribute='name') | reject('equalto','rn') | list %}
 {% set t2_cols = adapter.get_columns_in_relation(t2_relation) | map(attribute='name') | reject('equalto','rn') | list %}
