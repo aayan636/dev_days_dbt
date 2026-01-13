@@ -41,3 +41,43 @@ selectors:
           value: model_18
         - method: fqn
           value: model_19
+        - method: fqn
+          value: model_20
+        - method: fqn
+          value: model_21
+        - method: fqn
+          value: model_22
+        - method: fqn
+          value: model_23
+        - method: fqn
+          value: model_24
+        - method: fqn
+          value: model_25
+        - method: fqn
+          value: model_26
+        - method: fqn
+          value: model_27
+        - method: fqn
+          value: model_28
+        - method: fqn
+          value: model_29
+        - method: fqn
+          value: model_30
+        - method: fqn
+          value: model_31
+        - method: fqn
+          value: model_32
+        - method: fqn
+          value: model_33
+        - method: fqn
+          value: model_34
+        - method: fqn
+          value: model_35
+        - method: fqn
+          value: model_36
+        - method: fqn
+          value: model_37
+        - method: fqn
+          value: model_38
+        - method: fqn
+          value: model_39
