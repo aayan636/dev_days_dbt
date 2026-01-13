@@ -21,3 +21,23 @@ selectors:
           value: model_8
         - method: fqn
           value: model_9
+        - method: fqn
+          value: model_10
+        - method: fqn
+          value: model_11
+        - method: fqn
+          value: model_12
+        - method: fqn
+          value: model_13
+        - method: fqn
+          value: model_14
+        - method: fqn
+          value: model_15
+        - method: fqn
+          value: model_16
+        - method: fqn
+          value: model_17
+        - method: fqn
+          value: model_18
+        - method: fqn
+          value: model_19

@@ -2,7 +2,6 @@ import random
 
 
 sources = [
-    " source('aayan_test', 'example_table') ",
     " source('aayan_test', 'example_table_2') ",
     " source('aayan_test', 'Aayan_S3_Input') ",
     " source('aayan_test', 'Aayan_S3_Lots_Of_Small_Files') ",
@@ -11,7 +10,7 @@ sources = [
 
 models = []
 
-for i in range(1, 10):
+for i in range(1, 20):
     upstream = sources + models
     subset_length = random.randint(1, min(len(upstream), 10))
     random_subset = random.sample(upstream, subset_length)
