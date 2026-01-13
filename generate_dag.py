@@ -18,7 +18,7 @@ for i in range(1, 101):
 
     current_model_name = "model_" + str(i)
     contents = '\n'.join([f"""{{% set dependency{j} = {u} %}}""" for j, u in enumerate(random_subset)])
-    contents += f"\n\nSELECT * from dependency0\n"
+    contents += "\n\nSELECT * from {{ dependency0 }}\n"
 
     models.append(f" ref('{current_model_name}') ")
 

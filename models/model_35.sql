@@ -1,11 +1,36 @@
-{% set dependency0 =  ref('model_7')  %}
-{% set dependency1 =  ref('model_9')  %}
-{% set dependency2 =  ref('model_26')  %}
-{% set dependency3 =  ref('model_10')  %}
-{% set dependency4 =  ref('model_33')  %}
-{% set dependency5 =  source('aayan_test', 'Aayan_S3_Input')  %}
-{% set dependency6 =  ref('model_2')  %}
-{% set dependency7 =  ref('model_20')  %}
-{% set dependency8 =  ref('model_13')  %}
+{% set dependency0 =  ref('model_5')  %}
+{% set dependency1 =  ref('model_6')  %}
+{% set dependency2 =  ref('model_10')  %}
+{% set dependency3 =  ref('model_19')  %}
+{% set dependency4 =  ref('model_12')  %}
+{% set dependency5 =  source('aayan_test', 'Aayan_S3_Even_More_Small_Files')  %}
+{% set dependency6 =  ref('model_27')  %}
+{% set dependency7 =  ref('model_2')  %}
+{% set dependency8 =  ref('model_24')  %}
+{% set dependency9 =  ref('model_26')  %}
+{% set dependency10 =  ref('model_18')  %}
+{% set dependency11 =  source('aayan_test', 'Aayan_S3_Lots_Of_Small_Files')  %}
+{% set dependency12 =  ref('model_32')  %}
+{% set dependency13 =  source('aayan_test', 'Aayan_S3_Input')  %}
+{% set dependency14 =  ref('model_7')  %}
+{% set dependency15 =  ref('model_23')  %}
+{% set dependency16 =  ref('model_28')  %}
+{% set dependency17 =  ref('model_30')  %}
+{% set dependency18 =  ref('model_31')  %}
+{% set dependency19 =  source('aayan_test', 'example_table')  %}
+{% set dependency20 =  ref('model_11')  %}
+{% set dependency21 =  ref('model_29')  %}
+{% set dependency22 =  ref('model_20')  %}
+{% set dependency23 =  ref('model_25')  %}
+{% set dependency24 =  ref('model_9')  %}
+{% set dependency25 =  ref('model_17')  %}
+{% set dependency26 =  ref('model_15')  %}
+{% set dependency27 =  ref('model_34')  %}
+{% set dependency28 =  ref('model_14')  %}
+{% set dependency29 =  ref('model_4')  %}
+{% set dependency30 =  ref('model_22')  %}
+{% set dependency31 =  ref('model_13')  %}
+{% set dependency32 =  ref('model_16')  %}
+{% set dependency33 =  ref('model_21')  %}
 
-SELECT * from dependency0
+SELECT * from {{ dependency0 }}

@@ -1,37 +1,4 @@
-{% set dependency0 =  ref('model_21')  %}
-{% set dependency1 =  source('aayan_test', 'Aayan_S3_Even_More_Small_Files')  %}
-{% set dependency2 =  ref('model_13')  %}
-{% set dependency3 =  ref('model_45')  %}
-{% set dependency4 =  ref('model_14')  %}
-{% set dependency5 =  source('aayan_test', 'Aayan_S3_Input')  %}
-{% set dependency6 =  ref('model_43')  %}
-{% set dependency7 =  ref('model_17')  %}
-{% set dependency8 =  ref('model_3')  %}
-{% set dependency9 =  ref('model_6')  %}
-{% set dependency10 =  ref('model_40')  %}
-{% set dependency11 =  ref('model_1')  %}
-{% set dependency12 =  ref('model_35')  %}
-{% set dependency13 =  ref('model_31')  %}
-{% set dependency14 =  ref('model_16')  %}
-{% set dependency15 =  ref('model_32')  %}
-{% set dependency16 =  ref('model_24')  %}
-{% set dependency17 =  ref('model_37')  %}
-{% set dependency18 =  ref('model_18')  %}
-{% set dependency19 =  ref('model_30')  %}
-{% set dependency20 =  ref('model_26')  %}
-{% set dependency21 =  ref('model_28')  %}
-{% set dependency22 =  ref('model_5')  %}
-{% set dependency23 =  ref('model_41')  %}
-{% set dependency24 =  ref('model_23')  %}
-{% set dependency25 =  ref('model_27')  %}
-{% set dependency26 =  ref('model_36')  %}
-{% set dependency27 =  ref('model_8')  %}
-{% set dependency28 =  ref('model_38')  %}
-{% set dependency29 =  ref('model_46')  %}
-{% set dependency30 =  ref('model_39')  %}
-{% set dependency31 =  source('aayan_test', 'example_table')  %}
-{% set dependency32 =  ref('model_44')  %}
-{% set dependency33 =  ref('model_25')  %}
-{% set dependency34 =  ref('model_33')  %}
+{% set dependency0 =  ref('model_6')  %}
+{% set dependency1 =  ref('model_39')  %}
 
-SELECT * from dependency0
+SELECT * from {{ dependency0 }}
