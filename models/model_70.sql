@@ -1,9 +1,4 @@
-{% set dependency0 =  ref('model_4')  %}
-{% set dependency1 =  ref('model_17')  %}
-{% set dependency2 =  ref('model_66')  %}
-{% set dependency3 =  ref('model_16')  %}
-{% set dependency4 =  source('aayan_test', 'example_table')  %}
-{% set dependency5 =  ref('model_7')  %}
-{% set dependency6 =  ref('model_25')  %}
+{% set dependency0 =  ref('model_3')  %}
+{% set dependency1 =  ref('model_42')  %}
 
 SELECT * from {{ dependency0 }}
