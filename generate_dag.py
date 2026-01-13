@@ -53,7 +53,7 @@ for i in range(1, 101):
 
 #generate python script for the above yml (of course with all tables)
 
-with open("models/_etleap_schema.yml", "w") as f:
+with open("models/_etleap_sources.yml", "w") as f:
     f.write("version: 2\n")
     f.write("sources:\n")
     f.write("  - name: aayan_test\n")
@@ -70,3 +70,22 @@ with open("models/_etleap_schema.yml", "w") as f:
         elif source_type == "ref(":
             model_name = source.strip().split("'")[1]
             f.write(f"      - name: {model_name}\n")
+
+# generate selectors.yml with selector to select all models
+# selectors:
+#   - name: tickets
+#     description: "Trying really hard to select two tables"
+#     definition:
+#       union:
+#         - method: fqn
+#           value: ....help!
+with open("selectors.yml", "w") as f:
+    f.write("selectors:\n")
+    f.write("  - name: tickets\n")
+    f.write('    description: "Trying really hard to select two tables"\n')
+    f.write("    definition:\n")
+    f.write("      union:\n")
+    for source in models:
+        model_name = source.strip().split("'")[1]
+        f.write("        - method: fqn\n")
+        f.write(f"          value: {model_name}\n")
