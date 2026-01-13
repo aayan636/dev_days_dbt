@@ -1,1 +1,0 @@
-SELECT * FROM {{ ref('actual_table') }}

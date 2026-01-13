@@ -13,7 +13,7 @@ models = []
 
 for i in range(1, 101):
     upstream = sources + models
-    subset_length = random.randint(1, len(upstream))
+    subset_length = random.randint(1, min(len(upstream), 10))
     random_subset = random.sample(upstream, subset_length)
 
     current_model_name = "model_" + str(i)

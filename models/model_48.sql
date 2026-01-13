@@ -1,4 +1,3 @@
-{% set dependency0 =  ref('model_6')  %}
-{% set dependency1 =  ref('model_39')  %}
+{% set dependency0 =  ref('model_47')  %}
 
 SELECT * from {{ dependency0 }}
