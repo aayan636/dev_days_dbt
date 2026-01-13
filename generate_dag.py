@@ -10,9 +10,9 @@ sources = [
 
 models = []
 
-for i in range(1, 20):
+for i in range(1, 40):
     upstream = sources + models
-    subset_length = random.randint(1, min(len(upstream), 10))
+    subset_length = random.randint(1, min(len(upstream), 5))
     random_subset = random.sample(upstream, subset_length)
 
     current_model_name = "model_" + str(i)
