@@ -35,3 +35,38 @@ for i in range(1, 101):
 
     with open("models/" + current_file_name, "w") as f:
         f.write(contents)
+
+# #need to the following, with all tables above
+# version: 2
+# sources:
+#   - name: aayan_test
+#     database: dev_etleap
+#     quoting:
+#         schema: true
+#         identifier: true
+#     tables:
+#       - name: Aayan_S3_Even_More_Small_Files
+#       - name: Aayan_S3_Input
+#       - name: Aayan_S3_Lots_Of_Small_Files
+#       - name: example_table
+#       - name: example_table_2
+
+#generate python script for the above yml (of course with all tables)
+
+with open("models/_etleap_schema.yml", "w") as f:
+    f.write("version: 2\n")
+    f.write("sources:\n")
+    f.write("  - name: aayan_test\n")
+    f.write("    database: dev_etleap\n")
+    f.write("    quoting:\n")
+    f.write("        schema: true\n")
+    f.write("        identifier: true\n")
+    f.write("    tables:\n")
+    for source in sources + models:
+        source_type = source.strip().split("'")[0]
+        if source_type == "source(":
+            table_name = source.strip().split("'")[3]
+            f.write(f"      - name: {table_name}\n")
+        elif source_type == "ref(":
+            model_name = source.strip().split("'")[1]
+            f.write(f"      - name: {model_name}\n")
