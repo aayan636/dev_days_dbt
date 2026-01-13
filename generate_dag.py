@@ -11,7 +11,7 @@ sources = [
 
 models = []
 
-for i in range(1, 101):
+for i in range(1, 10):
     upstream = sources + models
     subset_length = random.randint(1, min(len(upstream), 10))
     random_subset = random.sample(upstream, subset_length)
@@ -62,7 +62,7 @@ with open("models/_etleap_sources.yml", "w") as f:
     f.write("        schema: true\n")
     f.write("        identifier: true\n")
     f.write("    tables:\n")
-    for source in sources + models:
+    for source in sources:
         source_type = source.strip().split("'")[0]
         if source_type == "source(":
             table_name = source.strip().split("'")[3]
