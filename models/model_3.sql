@@ -1,4 +1,3 @@
-{% set dependency0 =  source('aayan_test', 'Aayan_S3_Input')  %}
-{% set dependency1 =  ref('model_1')  %}
+{% set dependency0 =  ref('model_2')  %}
 
 SELECT * from {{ dependency0 }}
