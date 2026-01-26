@@ -4,14 +4,6 @@ selectors:
     definition:
       union:
         - method: fqn
-          value: model_4
+          value: model3
         - method: fqn
-          value: model_10
-        - method: fqn
-          value: model_20
-        - method: fqn
-          value: model_21
-        - method: fqn
-          value: model_53
-        - method: fqn
-          value: model_99
+          value: model2
