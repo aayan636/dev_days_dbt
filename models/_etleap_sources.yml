@@ -6,7 +6,4 @@ sources:
         schema: true
         identifier: true
     tables:
-      - name: example_table_2
-      - name: Aayan_S3_Input
-      - name: Aayan_S3_Lots_Of_Small_Files
-      - name: Aayan_S3_Even_More_Small_Files
+      - name: The_almighty_source

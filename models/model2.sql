@@ -1,0 +1,16 @@
+SELECT * FROM {{ ref('model1_1') }}
+SELECT * FROM {{ ref('model1_2') }}
+SELECT * FROM {{ ref('model1_3') }}
+SELECT * FROM {{ ref('model1_4') }}
+SELECT * FROM {{ ref('model1_5') }}
+SELECT * FROM {{ ref('model1_6') }}
+SELECT * FROM {{ ref('model1_7') }}
+SELECT * FROM {{ ref('model1_8') }}
+SELECT * FROM {{ ref('model1_9') }}
+SELECT * FROM {{ ref('model1_10') }}
+SELECT * FROM {{ ref('model1_11') }}
+SELECT * FROM {{ ref('model1_12') }}
+SELECT * FROM {{ ref('model1_13') }}
+SELECT * FROM {{ ref('model1_14') }}
+SELECT * FROM {{ ref('model1_15') }}
+SELECT * FROM {{ ref('model1_16') }}
