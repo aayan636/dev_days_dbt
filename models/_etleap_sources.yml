@@ -6,7 +6,14 @@ sources:
         schema: true
         identifier: true
     tables:
-      - name: example_table_2
+      - name: aayan_car
+      - name: aayan_person_test
+      - name: Aayan_S3_Even_More_Small_Files
       - name: Aayan_S3_Input
       - name: Aayan_S3_Lots_Of_Small_Files
-      - name: Aayan_S3_Even_More_Small_Files
+      - name: coming_in_from_localhost_aayan_car4
+      - name: example_4
+      - name: example_table
+      - name: example_table_2
+      - name: public___person
+      - name: Yet_Another_Aayan_S3_Even_More_Small_Files
