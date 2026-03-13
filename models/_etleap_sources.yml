@@ -6,4 +6,11 @@ sources:
         schema: true
         identifier: true
     tables:
-      - name: The_almighty_source
+      - name: aayan_car
+      - name: Aayan_S3_Input
+      - name: coming_in_from_localhost_aayan_car4
+      - name: example_4
+      - name: example_table
+      - name: example_table_2
+      - name: paul_the_person
+      - name: public___person
