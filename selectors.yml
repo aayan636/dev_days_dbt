@@ -1,9 +1,6 @@
 selectors:
-  - name: tickets
-    description: "Trying really hard to select two tables"
+  - name: selector_1
+    description: "Select all models"
     definition:
-      union:
-        - method: fqn
-          value: model3
-        - method: fqn
-          value: model2
+      method: tag
+      value: "*"
