@@ -1,6 +1,4 @@
 selectors:
   - name: selector_1
     description: "Select all models"
-    definition:
-      method: tag
-      value: "*"
+    definition: "*"
