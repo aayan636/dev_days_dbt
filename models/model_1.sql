@@ -1,1 +1,1 @@
-SELECT * from {{ source('aayan_test', 'paul_the_person') }}
+SELECT * from {{ source('aayan_test', 'paul_the_person') }} 
