@@ -2,4 +2,4 @@
 {% set dependency1 =  source('public', 'public___department')  %}
 {% set dependency2 =  source('public', 'public___caius_test')  %}
 
-SELECT * from {{ dependency0 }} 
+SELECT * from {{ dependency0 }}
