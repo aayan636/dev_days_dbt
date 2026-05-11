@@ -1,5 +1,5 @@
-{% set dependency0 =  source('public', 'public___comp_test_a')  %}
-{% set dependency1 =  source('public', 'public___department')  %}
-{% set dependency2 =  source('public', 'public___caius_test')  %}
+{% set dependency0 =  source('public', 'public___department')  %}
 
-SELECT * from {{ dependency0 }}
+SELECT *,
+       '{{ env_var("DBT_KEY") }}' as dbt_key
+FROM {{ dependency0 }}

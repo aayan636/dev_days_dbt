@@ -9,7 +9,7 @@ sources = [
 
 models = []
 
-for i in range(1, 500):
+for i in range(1, 2):
     upstream = sources + models
     subset_length = random.randint(1, min(len(upstream), 5))
     random_subset = random.sample(upstream, subset_length)
