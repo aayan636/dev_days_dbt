@@ -1,6 +1,6 @@
 version: 2
 sources:
-  - name: aayan_test
+  - name: public
     database: dev_etleap
     quoting:
         schema: true
