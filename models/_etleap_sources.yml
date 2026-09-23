@@ -6,6 +6,10 @@ sources:
         schema: true
         identifier: true
     tables:
-      - name: file_xml2
-      - name: file_xml3
-      - name: file_xml9
+      - name: accounts
+      - name: invoice_line_items
+      - name: invoices
+      - name: payments
+      - name: plans
+      - name: subscriptions
+      - name: users
